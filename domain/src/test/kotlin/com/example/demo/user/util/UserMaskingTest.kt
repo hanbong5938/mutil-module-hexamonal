@@ -2,7 +2,8 @@ package com.example.demo.user.util
 
 import com.example.demo.user.vo.Email
 import com.example.demo.user.vo.Phone
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Assertions.assertNotEquals
 import org.junit.jupiter.api.Test
 
 class UserMaskingTest {

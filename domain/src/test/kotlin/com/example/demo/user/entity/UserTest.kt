@@ -3,7 +3,7 @@ package com.example.demo.user.entity
 import com.example.demo.user.enums.UserType
 import com.example.demo.user.vo.Email
 import com.example.demo.user.vo.Password
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
 class UserTest {

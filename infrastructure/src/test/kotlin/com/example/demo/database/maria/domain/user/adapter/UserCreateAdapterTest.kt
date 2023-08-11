@@ -5,7 +5,8 @@ import com.example.demo.database.maria.domain.user.entity.UserEntity
 import com.example.demo.database.maria.domain.user.repository.UserRepository
 import com.example.demo.user.entity.User
 import com.example.demo.user.enums.UserType
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Assertions.assertNotNull
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith
