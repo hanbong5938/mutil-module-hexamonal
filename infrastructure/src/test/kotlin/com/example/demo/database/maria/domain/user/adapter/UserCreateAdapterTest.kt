@@ -1,10 +1,10 @@
 package com.example.demo.database.maria.domain.user.adapter
 
-import com.example.demo.application.user.command.UserCreateCommand
+import com.example.demo.application.domain.user.command.UserCreateCommand
 import com.example.demo.database.maria.domain.user.entity.UserEntity
 import com.example.demo.database.maria.domain.user.repository.UserRepository
-import com.example.demo.user.entity.User
-import com.example.demo.user.enums.UserType
+import com.example.demo.domain.user.entity.User
+import com.example.demo.domain.user.enums.UserType
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertNotNull
 import org.junit.jupiter.api.BeforeEach
