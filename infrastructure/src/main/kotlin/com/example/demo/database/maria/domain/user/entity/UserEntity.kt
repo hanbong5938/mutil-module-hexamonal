@@ -1,9 +1,9 @@
 package com.example.demo.database.maria.domain.user.entity
 
-import com.example.demo.user.entity.User
-import com.example.demo.user.enums.UserType
-import com.example.demo.user.vo.Email
-import com.example.demo.user.vo.Password
+import com.example.demo.domain.user.entity.User
+import com.example.demo.domain.user.enums.UserType
+import com.example.demo.domain.user.vo.Email
+import com.example.demo.domain.user.vo.Password
 import jakarta.persistence.Column
 import jakarta.persistence.Entity
 import jakarta.persistence.Id

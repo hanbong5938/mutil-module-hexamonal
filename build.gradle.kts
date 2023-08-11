@@ -88,6 +88,18 @@ project(":infrastructure") {
         api("org.springframework.boot:spring-boot-starter-data-jpa")
         api("org.mariadb.jdbc:mariadb-java-client:3.1.4")
         testApi("org.springframework.boot:spring-boot-starter-test")
+    }
+}
+
+project(":api") {
+    apply(plugin = "org.springframework.boot")
+    apply(plugin = "io.spring.dependency-management")
+    apply(plugin = "kotlin-spring")
+
+    dependencies {
+        api(project(":infrastructure"))
+        api("org.springframework.boot:spring-boot-starter-web")
+        testApi("org.springframework.boot:spring-boot-starter-test")
 
     }
 }

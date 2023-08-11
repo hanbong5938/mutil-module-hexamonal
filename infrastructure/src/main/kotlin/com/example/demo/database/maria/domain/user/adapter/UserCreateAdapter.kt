@@ -1,10 +1,10 @@
 package com.example.demo.database.maria.domain.user.adapter
 
-import com.example.demo.application.user.command.UserCreateCommand
-import com.example.demo.application.user.output.UserCreateOutputPort
+import com.example.demo.application.domain.user.command.UserCreateCommand
+import com.example.demo.application.domain.user.output.UserCreateOutputPort
 import com.example.demo.database.maria.domain.user.entity.UserEntity
 import com.example.demo.database.maria.domain.user.repository.UserRepository
-import com.example.demo.user.entity.User
+import com.example.demo.domain.user.entity.User
 import org.springframework.stereotype.Component
 
 @Component
