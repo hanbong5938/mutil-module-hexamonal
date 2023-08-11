@@ -48,16 +48,15 @@ allprojects {
 }
 
 subprojects {
-    dependencies {
-        testApi("org.springframework.boot:spring-boot-starter-test")
-    }
-}
 
-project(":domain") {
     tasks {
         withType<Jar> { enabled = true }
         withType<BootJar> { enabled = false }
     }
+
+}
+
+project(":domain") {
 
     dependencies {
         testApi("org.junit.jupiter:junit-jupiter:5.10.0")
@@ -74,6 +73,21 @@ project(":application") {
     dependencies {
         api(project(":domain"))
         api("org.springframework.boot:spring-boot-starter-actuator")
+        testApi("org.springframework.boot:spring-boot-starter-test")
     }
 }
 
+
+project(":infrastructure") {
+    apply(plugin = "org.springframework.boot")
+    apply(plugin = "io.spring.dependency-management")
+    apply(plugin = "kotlin-spring")
+
+    dependencies {
+        api(project(":application"))
+        api("org.springframework.boot:spring-boot-starter-data-jpa")
+        api("org.mariadb.jdbc:mariadb-java-client:3.1.4")
+        testApi("org.springframework.boot:spring-boot-starter-test")
+
+    }
+}

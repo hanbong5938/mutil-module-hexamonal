@@ -5,9 +5,18 @@ import com.example.demo.user.vo.Email
 import com.example.demo.user.vo.Password
 
 data class User(
-    val id: Long,
+    val id: Long?,
     val name: String,
     val email: Email,
     val password: Password,
     val type: UserType
-)
+) {
+    constructor(name: String, email: Email, password: Password, type: UserType) : this(
+        null,
+        name,
+        email,
+        password,
+        type
+    )
+
+}
