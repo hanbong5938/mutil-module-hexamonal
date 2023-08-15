@@ -100,6 +100,5 @@ project(":api") {
         api(project(":infrastructure"))
         api("org.springframework.boot:spring-boot-starter-web")
         testApi("org.springframework.boot:spring-boot-starter-test")
-
     }
 }
